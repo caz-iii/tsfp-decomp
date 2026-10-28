@@ -1,0 +1,12 @@
+# TimeSplitters: Future Perfect (GameCube, NTSC-U) - G3FE69
+# See docs/ and decomp-toolkit's config.example.yml for field documentation.
+object_base: orig/G3FE69
+object: sys/main.dol
+hash: 791b22e44038676ef1935d9f78344a4dfcd2cd20
+symbols: config/G3FE69/symbols.txt
+splits: config/G3FE69/splits.txt
+# Dolphin SDK libs are the Apr/Nov 2004 builds (0x2301) -> CodeWarrior GC 2.6/2.7 era.
+mw_comment_version: 11
+detect_objects: true
+detect_strings: true
+write_asm: true
