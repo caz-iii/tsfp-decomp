@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "last_updated": "2025-01-20T08:00:00Z",
+  "modules": ["os", "dvd", "mtx", "gx", "pad", "vi", "ai", "ar", "dsp", "card", "si", "db"],
+  "signatures": [
+    {
+      "module": "gx",
+      "function_name": "GXInit",
+      "byte_pattern": "94 21 FF 80 7C 08 02 A6 90 01 00 84 ?? ?? ?? ?? BF 41 00 58 3B 80 00 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 2,
+      "notes": "Initializes the GX graphics subsystem with a FIFO buffer"
+    },
+    {
+      "module": "gx",
+      "function_name": "GXSetViewport",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? BF 41 00 08 C0 23 00 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 6,
+      "notes": "Sets viewport transform registers (xOrig, yOrig, width, height, nearZ, farZ)"
+    },
+    {
+      "module": "gx",
+      "function_name": "GXSetScissor",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 54 63 04 3E 54 84 04 3E",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 4,
+      "notes": "Sets the scissor rectangle for clipping (left, top, width, height)"
+    },
+    {
+      "module": "gx",
+      "function_name": "GXBegin",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 3C A0 CC 01 54 63 10 3A",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 3,
+      "notes": "Begins a primitive draw with type, vertex format, and vertex count"
+    },
+    {
+      "module": "gx",
+      "function_name": "GXEnd",
+      "byte_pattern": "4E 80 00 20",
+      "mask": "FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 0,
+      "notes": "Ends a primitive draw (often inlined as blr)"
+    },
+    {
+      "module": "os",
+      "function_name": "OSCreateThread",
+      "byte_pattern": "94 21 FF D0 7C 08 02 A6 90 01 00 34 ?? ?? ?? ?? 93 E1 00 2C 7C 7F 1B 78",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 7,
+      "notes": "Creates an OS thread with entry point, stack, stack size, and priority"
+    },
+    {
+      "module": "os",
+      "function_name": "OSCreateAlarm",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 38 00 00 00 90 03 00 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Initializes an OSAlarm structure"
+    },
+    {
+      "module": "os",
+      "function_name": "OSReport",
+      "byte_pattern": "94 21 FF 70 7C 08 02 A6 90 01 00 94 ?? ?? ?? ?? 90 61 00 1C 90 81 00 20",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Printf-style debug output to the OS console (variadic)"
+    },
+    {
+      "module": "os",
+      "function_name": "DCFlushRange",
+      "byte_pattern": "3C 00 FF FF 60 00 FF E0 7C 64 00 38 38 A0 00 00 7C 05 20 40 4C 00 01 2C",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00",
+      "function_hash": "",
+      "parameter_count": 2,
+      "notes": "Flushes data cache for a given address range (addr, length)"
+    },
+    {
+      "module": "os",
+      "function_name": "ICInvalidateRange",
+      "byte_pattern": "3C 00 FF FF 60 00 FF E0 7C 64 00 38 38 A0 00 00 7C 05 20 40 4C 00 01 2C",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00",
+      "function_hash": "",
+      "parameter_count": 2,
+      "notes": "Invalidates instruction cache for a given address range (addr, length)"
+    },
+    {
+      "module": "dvd",
+      "function_name": "DVDOpen",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? 93 E1 00 1C 7C 9F 23 78",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 2,
+      "notes": "Opens a file from the disc by path into a DVDFileInfo structure"
+    },
+    {
+      "module": "dvd",
+      "function_name": "DVDReadAsync",
+      "byte_pattern": "94 21 FF D0 7C 08 02 A6 90 01 00 34 ?? ?? ?? ?? BF 61 00 1C 7C 7B 1B 78",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 5,
+      "notes": "Reads data from disc asynchronously with callback (fileInfo, buf, len, offset, cb)"
+    },
+    {
+      "module": "dvd",
+      "function_name": "DVDClose",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 38 00 00 00 90 03 00 34",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Closes a previously opened DVDFileInfo handle"
+    },
+    {
+      "module": "dvd",
+      "function_name": "DVDReadPrio",
+      "byte_pattern": "94 21 FF C0 7C 08 02 A6 90 01 00 44 ?? ?? ?? ?? BF 21 00 24 7C 7A 1B 78",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 6,
+      "notes": "Reads data from disc synchronously with priority (fileInfo, buf, len, offset, prio)"
+    },
+    {
+      "module": "mtx",
+      "function_name": "MTXIdentity",
+      "byte_pattern": "3C 60 3F 80 90 63 00 00 38 00 00 00 90 03 00 04 90 03 00 08 90 63 00 0C",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Sets a 3x4 matrix to identity (Mtx parameter)"
+    },
+    {
+      "module": "mtx",
+      "function_name": "MTXMultiply",
+      "byte_pattern": "94 21 FF C0 ?? ?? ?? ?? ?? ?? ?? ?? C0 03 00 00 C0 43 00 0C C0 63 00 18",
+      "mask": "FF FF FF FF 00 00 00 00 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 3,
+      "notes": "Multiplies two 3x4 matrices (a, b, result)"
+    },
+    {
+      "module": "mtx",
+      "function_name": "MTXTranspose",
+      "byte_pattern": "C0 03 00 00 C0 23 00 0C C0 43 00 18 D0 04 00 00 D0 24 00 04 D0 44 00 08",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 2,
+      "notes": "Transposes a 3x4 matrix (src, dst)"
+    },
+    {
+      "module": "ai",
+      "function_name": "AIInit",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 3C 60 CC 00 60 63 65 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Initializes the audio interface with a DMA callback"
+    },
+    {
+      "module": "ai",
+      "function_name": "AIStartDMA",
+      "byte_pattern": "3C 60 CC 00 60 63 65 00 38 00 00 01 90 03 00 00 ?? ?? ?? ?? 4E 80 00 20",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 0,
+      "notes": "Starts the AI DMA transfer for audio playback"
+    },
+    {
+      "module": "dsp",
+      "function_name": "DSPInit",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? 3C 60 CC 00 60 63 50 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 0,
+      "notes": "Initializes the DSP hardware for audio processing"
+    },
+    {
+      "module": "pad",
+      "function_name": "PADRead",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? 3C 60 CC 00 60 63 64 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Reads controller input state into a PADStatus array"
+    },
+    {
+      "module": "pad",
+      "function_name": "PADInit",
+      "byte_pattern": "94 21 FF F0 7C 08 02 A6 90 01 00 14 ?? ?? ?? ?? 38 60 00 00 38 80 00 04",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 0,
+      "notes": "Initializes the PAD (controller) library"
+    },
+    {
+      "module": "vi",
+      "function_name": "VIInit",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? 3C 60 CC 00 60 63 20 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 0,
+      "notes": "Initializes the video interface hardware"
+    },
+    {
+      "module": "vi",
+      "function_name": "VIConfigure",
+      "byte_pattern": "94 21 FF D0 7C 08 02 A6 90 01 00 34 ?? ?? ?? ?? 93 E1 00 2C 7C 7F 1B 78 80 03 00 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 1,
+      "notes": "Configures the video interface with a GXRenderModeObj"
+    },
+    {
+      "module": "card",
+      "function_name": "CARDOpen",
+      "byte_pattern": "94 21 FF D0 7C 08 02 A6 90 01 00 34 ?? ?? ?? ?? BF 61 00 1C 7C 7B 1B 78 7C 9C 23 78",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 4,
+      "notes": "Opens a file on memory card (chan, filename, cardFileInfo, result)"
+    },
+    {
+      "module": "card",
+      "function_name": "CARDRead",
+      "byte_pattern": "94 21 FF E0 7C 08 02 A6 90 01 00 24 ?? ?? ?? ?? 93 E1 00 1C 7C 7F 1B 78 80 63 00 00",
+      "mask": "FF FF FF FF FF FF FF FF FF FF FF FF 00 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF",
+      "function_hash": "",
+      "parameter_count": 4,
+      "notes": "Reads data from a memory card file (cardFileInfo, buf, length, offset)"
+    }
+  ]
+}

@@ -1,0 +1,1010 @@
+[
+ {
+  "lib": "base",
+  "file": "dolphin/base/PPCArch.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "db",
+  "file": "dolphin/db/db.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OS.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSAlarm.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSAlloc.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSArena.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSAudioSystem.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSCache.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSContext.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSError.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSExec.c",
+  "complete": false,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSFatal.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSFont.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSInterrupt.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSLink.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSMemory.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSMutex.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSReboot.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSReset.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSResetSW.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSRtc.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSSync.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSThread.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/OSTime.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "os",
+  "file": "dolphin/os/__ppc_eabi_init.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "mtx",
+  "file": "dolphin/mtx/mtx.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "mtx",
+  "file": "dolphin/mtx/mtx44.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "mtx",
+  "file": "dolphin/mtx/vec.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvdlow.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvdfs.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvd.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvdqueue.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvderror.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvdidutils.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/dvdFatal.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "dvd",
+  "file": "dolphin/dvd/fstload.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "vi",
+  "file": "dolphin/vi/vi.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "pad",
+  "file": "dolphin/pad/Pad.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ai",
+  "file": "dolphin/ai/ai.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ar",
+  "file": "dolphin/ar/ar.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ar",
+  "file": "dolphin/ar/arq.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AX.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXAlloc.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXAux.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXCL.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXOut.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXSPB.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "ax",
+  "file": "dolphin/ax/AXVPB.c",
+  "complete": false,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "dsp",
+  "file": "dolphin/dsp/dsp.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "dsp",
+  "file": "dolphin/dsp/dsp_task.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDBios.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDUnlock.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDRdwr.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDBlock.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDDir.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDCheck.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDMount.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDFormat.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDOpen.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDCreate.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDRead.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDWrite.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDDelete.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDStat.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDRename.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "signed"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "card",
+  "file": "dolphin/card/CARDNet.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "exi",
+  "file": "dolphin/exi/EXIBios.c",
+  "complete": true,
+  "opt": "-O3,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "exi",
+  "file": "dolphin/exi/EXIUart.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "si",
+  "file": "dolphin/si/SIBios.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "si",
+  "file": "dolphin/si/SISamplingRate.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXInit.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXFifo.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXAttr.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXMisc.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXGeometry.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXFrameBuf.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXLight.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXTexture.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXBump.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXTev.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXPixel.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXDisplayList.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": false
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXTransform.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ },
+ {
+  "lib": "gx",
+  "file": "dolphin/gx/GXPerf.c",
+  "complete": true,
+  "opt": "-O4,p",
+  "extra_cflags": [
+   "-char",
+   "unsigned"
+  ],
+  "warnings": [],
+  "verified": true
+ }
+]
